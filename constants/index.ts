@@ -84,14 +84,17 @@ export const Skill_data = [
     {
       name: "Discord",
       src: "/instagram.svg",
+      link: "https://www.instagram.com/shivanshsingh4378/",
     },
     {
-      name: "Facebook",
-      src: "/facebook.svg",
+      name: "Discord",
+      src: "/lin.png",
+      link: "https://www.linkedin.com/in/shivansh-singh-736521289/",
     },
     {
       name: "Instagram",
       src: "/discord.svg",
+      link: "https://discord.com/shivanshsingh0056_34118",
     },
   ];
   

@@ -9,8 +9,18 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import { FaDownload } from "react-icons/fa";
 
 const HeroContent = () => {
+  function downloadResume() {
+    const link = document.createElement('a');
+    link.href = '/CV.pdf';
+    link.download = 'CV.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   return (
     <motion.div
       initial="hidden"
@@ -51,9 +61,10 @@ const HeroContent = () => {
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
+          onClick={() => {downloadResume()}}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
-          Learn More!
+          Download CV
         </motion.a>
       </div>
 

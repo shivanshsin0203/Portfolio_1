@@ -1,6 +1,12 @@
+"use client";
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
-
+import { motion } from "framer-motion";
+import {
+  slideInFromLeft,
+  slideInFromRight,
+  slideInFromTop,
+} from "@/utils/motion";
 const Projects = () => {
   return (
     <div
@@ -14,19 +20,26 @@ const Projects = () => {
         <ProjectCard
           src="/shoesale.png"
           title="Shoe Sale Ecommerce"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description="ShoeSale is modern Ecommerce website where one can view along with buy trendy shoes but amazing UI UX."
+          source="https://github.com/shivanshsin0203/ShoeSale"
+          live="https://shoe-sale.vercel.app"
         />
         <ProjectCard
           src="/creedo.png"
           title="Creedo Social Network"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description="Creedo is a social network website where one can connect with friends add post view it and many more."
+          source="https://github.com/shivanshsin0203/ShoeSale"
+          live="https://shoe-sale.vercel.app"
         />
         <ProjectCard
           src="/bytebond.png"
           title="Bytebond Developer Community"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description="ByteBond is an amazimg developer connect website where one can meet with other developers and interact with them."
+          source="https://github.com/shivanshsin0203/ShoeSale"
+          live="https://shoe-sale.vercel.app"
         />
       </div>
+      
     </div>
   );
 };
